@@ -1,0 +1,8 @@
+2025-04-11 15:11:48 [main] INFO  AUTOMATION - Inicio de de test case Navegar a la pagina de Login de Sauce Demo
+2025-04-11 15:11:48 [main] INFO  AUTOMATION - Navego ala pagina Sauce demo https://www.saucedemo.com/
+2025-04-11 15:11:49 [main] INFO  AUTOMATION - verifico si estoy en la pagina de login suce demo
+2025-04-11 15:11:49 [main] INFO  AUTOMATION - Ingreso el nombre de usuario
+2025-04-11 15:11:49 [main] INFO  AUTOMATION - Ingreso el password
+2025-04-11 15:11:49 [main] INFO  AUTOMATION - Hago click en el boton de login
+2025-04-11 15:11:49 [main] INFO  AUTOMATION - Entro a este metodo
+2025-04-11 15:11:49 [main] INFO  AUTOMATION - Verificando si inicio pagina de Products

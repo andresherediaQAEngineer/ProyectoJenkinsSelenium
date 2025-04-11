@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n </Property>
+
+    </Properties>
+
+    <Appenders>
+        <!-- Configuración para salida en consola
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}"/>
+        </Console>-->
+        <!-- Configuración para salida en archivo -->
+        <File name="logsInfo" fileName="src/test/java/resources/logs/informativeLogs.log" append="false">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+        <File name="debugLogs" fileName="src/test/java/resources/logs/debugLogs.log" append="false">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+        <File name="warningLogs" fileName="src/test/java/resources/logs/warningLogs.log" append="false">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+        <File name="traceLogs" fileName="src/test/java/resources/logs/traceLogs.log" append="false">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <!-- Logger raíz -->
+        <Root level="trace">
+            <Appender-Ref ref="logsInfo" level="info"/>
+            <Appender-Ref ref="debugLogs" level="debug"/>
+            <Appender-Ref ref="warningLogs" level="debug"/>
+            <Appender-Ref ref="traceLogs" level="trace"/>
+        </Root>
+    </Loggers>
+</Configuration>
