@@ -15,7 +15,7 @@ pipeline {
                 script {
                     echo "Ejecutando el TestRunner con Selenium y Cucumber"
                 }
-                sh 'mvn -Dtest=TestRunner test"'
+                sh 'mvn -Dtest=TestRunner test'
             }
         }
         stage('Publicar resultados') {
